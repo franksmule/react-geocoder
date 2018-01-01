@@ -132,14 +132,14 @@ var Geocoder = React.createClass({
     return false;
   },
   render() {
-    var input = (
-        <input
+    const input = (
+        <span><input
         ref='input'
         className={this.props.inputClass}
         onInput={this.onInput}
         onKeyDown={this.onKeyDown}
         placeholder={this.props.inputPlaceholder}
-        type='text' />
+        type='text' /></span>
     );
     return (
       <div>
